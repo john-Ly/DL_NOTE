@@ -3,7 +3,7 @@ function [W1, W2] = MultiClass(W1, W2, X, D)
   
   N = 5;  
   for k = 1:N
-    x = reshape(X(:, :, k), 25, 1);
+    x = reshape(X(:, :, k), 25, 1);   
     d = D(k, :)';
     
     v1 = W1*x;

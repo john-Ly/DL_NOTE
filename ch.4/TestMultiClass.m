@@ -2,8 +2,9 @@ clear all
 
 rng(3);
 
+% the third dimension of X is the index id, not the number(GUESS)
 X  = zeros(5, 5, 5);
- 
+
 X(:, :, 1) = [ 0 1 1 0 0;
                0 0 1 0 0;
                0 0 1 0 0;

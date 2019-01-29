@@ -22,7 +22,7 @@ function [W1, W2, W3, W4] = DeepReLU(W1, W2, W3, W4, X, D)
     delta = e;
 
     e3     = W4'*delta;
-    delta3 = (v3 > 0).*e3;
+    delta3 = (v3 > 0).*e3;    % boolean as int
     
     e2     = W3'*delta3;
     delta2 = (v2 > 0).*e2;

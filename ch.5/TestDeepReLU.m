@@ -43,7 +43,8 @@ D = [ 1 0 0 0 0;
       0 0 0 1 0;
       0 0 0 0 1
     ];
-      
+
+%ReLU is very sensitive to initial value of weights
 W1 = 2*rand(20, 25) - 1;
 W2 = 2*rand(20, 20) - 1;
 W3 = 2*rand(20, 20) - 1;

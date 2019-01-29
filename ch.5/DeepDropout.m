@@ -7,6 +7,8 @@ function [W1, W2, W3, W4] = DeepDropout(W1, W2, W3, W4, X, D)
     v1 = W1*x;
     y1 = Sigmoid(v1);
     y1 = y1 .* Dropout(y1, 0.2);
+    % drop 20% node in the left hidden layer
+    % drop some nodes, so increase the original value of the left nodes ==  y1 .* Dropout
     
     v2 = W2*y1;
     y2 = Sigmoid(v2);

@@ -1,4 +1,4 @@
-clear all
+clear all;clc;
 
 TestMultiClass;                 % W1, W2
 
