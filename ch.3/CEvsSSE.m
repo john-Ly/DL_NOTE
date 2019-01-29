@@ -1,5 +1,6 @@
-clear all
-           
+clear all; clc;
+
+% Cross Entropy is much better than Sum of Squared Error
 X = [ 0 0 1;
       0 1 1;
       1 0 1;

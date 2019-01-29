@@ -12,10 +12,10 @@ function [W1, W2] = BackpropCE(W1, W2, X, D)
     y  = Sigmoid(v);
     
     e     = d - y;
-    delta = e;
+    delta = e;              % output node
 
     e1     = W2'*delta;
-    delta1 = y1.*(1-y1).*e1; 
+    delta1 = y1.*(1-y1).*e1;    % hidden layer
     
     dW1 = alpha*delta1*x';
     W1 = W1 + dW1;

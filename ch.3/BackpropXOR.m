@@ -1,3 +1,4 @@
+% using SGD to implemente BP-XOR
 function [W1, W2] = BackpropXOR(W1, W2, X, D)
   alpha = 0.9;
   
